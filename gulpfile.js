@@ -23,7 +23,7 @@ function browsersync(){
 
 function styles(){
   return src('app/scss/style.scss')
-    .pipe(scss({outputStyle: 'compressed' }))
+    .pipe(scss({outputStyle: "expanded" }))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 version'],
@@ -84,8 +84,8 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
-exports.build = build;
-// exports.build = series(cleanDist, images, build);
+// exports.build = build;
+exports.build = series(cleanDist, images, build);
 exports.cleanDist = cleanDist;
 exports.images = images;
 
