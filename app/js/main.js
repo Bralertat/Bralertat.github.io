@@ -57,5 +57,4 @@ function initializeClock(id, endtime) {
 }
 
 const deadline = document.querySelector('.promo__clock').dataset.time; 
-console.log(document.querySelector('.promo__clock').dataset.time);
 initializeClock('.promo__clock', deadline);
