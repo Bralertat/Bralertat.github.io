@@ -3,26 +3,50 @@ $default: #8d8d8d;
 $title: #29282d;
 $bg: #f6f6f6;
 
+// ИМХО во время верстки оключать алтернативныйе sansserif
+// иначе он подставляется а мы этого даже не замечаем
+// по моему нужно делать одну переменную на шрифт 
+//и перечислять в font-family все варианты жирности которые есть
 %quicksand-400{
-  font-family: 'Quicksand-Regular', sans-serif;
+  font-family: 'Quicksand-Regular';
   font-weight: 400;
 }
 %quicksand-500{
-  font-family: 'Quicksand-Medium', sans-serif;
+  font-family: 'Quicksand-Medium';
   font-weight: 500;
 }
 %roboto-400{
-  font-family: 'Roboto-Regular', sans-serif;
+  font-family: 'Roboto-Regular';
   font-weight: 400;
 }
 %roboto-500{
-  font-family: 'Roboto-Medium', sans-serif;
+  font-family: 'Roboto-Medium';
   font-weight: 500;
 }
 %roboto-700{
-  font-family: 'Roboto-Bold', sans-serif;
+  font-family: 'Roboto-Bold';
   font-weight: 700;
 }
+// %quicksand-400{
+//   font-family: 'Quicksand-Regular', sans-serif;
+//   font-weight: 400;
+// }
+// %quicksand-500{
+//   font-family: 'Quicksand-Medium', sans-serif;
+//   font-weight: 500;
+// }
+// %roboto-400{
+//   font-family: 'Roboto-Regular', sans-serif;
+//   font-weight: 400;
+// }
+// %roboto-500{
+//   font-family: 'Roboto-Medium', sans-serif;
+//   font-weight: 500;
+// }
+// %roboto-700{
+//   font-family: 'Roboto-Bold', sans-serif;
+//   font-weight: 700;
+// }
 %btn{
   padding: 12px 26px;
   text-transform: uppercase;
